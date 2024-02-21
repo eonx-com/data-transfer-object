@@ -1,11 +1,12 @@
 {
-    "name": "spatie/data-transfer-object",
+    "name": "eonx-com/data-transfer-object",
     "description": "Data transfer objects with batteries included",
     "keywords": [
         "spatie",
+        "eonx",
         "data-transfer-object"
     ],
-    "homepage": "https://github.com/spatie/data-transfer-object",
+    "homepage": "https://github.com/eonx-com/data-transfer-object",
     "license": "MIT",
     "authors": [
         {
