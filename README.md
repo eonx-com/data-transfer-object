@@ -4,6 +4,11 @@
 ![Test](https://github.com/eonx-com/data-transfer-object/workflows/Test/badge.svg)
 [![Total Downloads](https://img.shields.io/packagist/dt/eonx-com/data-transfer-object.svg?style=flat-square)](https://packagist.org/packages/eonx-com/data-transfer-object)
 
+## Fork Information
+
+This repository is a **fork** of the original [spatie/data-transfer-object](https://github.com/spatie/data-transfer-object).
+
+
 ## Installation
 
 You can install the package via composer:
