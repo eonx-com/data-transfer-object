@@ -71,6 +71,10 @@ class DataTransferObjectProperty
 
     public function getDefaultValue(): mixed
     {
+        if (! $this->reflectionProperty->hasDefaultValue()) {
+            return null;
+        }
+
         return $this->reflectionProperty->getDefaultValue();
     }
 
