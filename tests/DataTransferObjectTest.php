@@ -194,6 +194,26 @@ class DataTransferObjectTest extends TestCase
     }
 
     /** @test */
+    public function create_with_property_without_default_value_does_not_trigger_deprecation()
+    {
+        $deprecations = [];
+        set_error_handler(function (int $errno, string $errstr) use (&$deprecations): bool {
+            $deprecations[] = $errstr;
+
+            return true;
+        }, E_DEPRECATED);
+
+        try {
+            $dto = new ComplexDtoWithNullableProperty(name: 'a');
+        } finally {
+            restore_error_handler();
+        }
+
+        $this->assertSame([], $deprecations);
+        $this->assertNull($dto->other);
+    }
+
+    /** @test */
     public function test_clone()
     {
         $array = [
